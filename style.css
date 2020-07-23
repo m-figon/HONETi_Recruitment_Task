@@ -8,16 +8,16 @@ body {
   position: relative;
 }
 .logo-div {
-  margin-top: 3rem;
-  width: 18rem;
-  height: 7rem;
-  border: 10px solid rgba(255, 255, 255, 0.3);
+  margin-top: 2rem;
+  width: 12rem;
+  height: 5rem;
+  border: 7px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #logo {
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 77px;
   color: rgba(255, 255, 255, 0.3);
   font-weight: 700;
@@ -68,12 +68,12 @@ body {
 }
 .baner {
   width: 100vw;
-  height: 50rem;
+  height: 30rem;
   display: flex;
 }
 .baner-lewy {
   width: 60%;
-  height: 50%;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,16 +158,15 @@ body {
   width: 30rem;
 }
 .jak-to-dziala {
-  background-color: white;
   width: 100%;
-  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .jak-to-dziala h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 49px;
   color: #1a1a1a;
   font-weight: 700;
@@ -176,34 +175,196 @@ body {
   justify-content: center;
 }
 .jak-to-dziala .item .left,
-.jak-to-dziala .item .right
-{
-  width:50%;
+.jak-to-dziala .item .right {
+  width: 30%;
   display: flex;
   flex-direction: column;
 }
-.jak-to-dziala .item .left img {
-  width: 20rem;
-  height:40rem;
+.jak-to-dziala .item .right {
+  width: 50%;
 }
-.jak-to-dziala .item .right h2 {
+#item1 {
+  margin-left: -20rem;
+  margin-top: -10rem;
+}
+#item2 {
+  margin-left: 45rem;
+  margin-top: -10rem;
+}
+#item3 {
+  margin-top: -15rem;
+  margin-left: -10rem;
+}
+#item4 {
+  flex-direction: column;
+  margin-top: -20rem;
+  margin-left: 50rem;
+}
+.up {
+  margin-left: 10rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.down {
+  margin-top: -7rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#arrow1,
+#arrow2,
+#arrow3,
+#arrow4 {
+  z-index: 3;
+}
+#arrow1 {
+  transform: rotate(50deg);
+  margin-left: -5rem;
+  margin-top: -15rem;
+}
+#arrow2 {
+  transform: rotate(-230deg);
+  margin-top: -10rem;
+}
+#arrow3 {
+  width: 7rem;
+  height: 7rem;
+}
+#phone1 {
+  transform: rotate(-20deg);
+}
+#phone4 {
+  transform: rotate(-70deg);
+}
+.jak-to-dziala .item .left img,
+.jak-to-dziala .item .down img {
+  width: 15rem;
+  height: 30rem;
+  filter: drop-shadow(0 0 17.5px rgba(0, 0, 0, 0.25));
+}
+.jak-to-dziala .item .right h2,
+.jak-to-dziala .item .up h2 {
   font-size: 70px;
   line-height: 36px;
   color: #ff9225;
   font-weight: 400;
   font-family: "Love Ya Like A Sister";
 }
-.jak-to-dziala .item .right h1 {
-  font-size: 26px;
-line-height: 36px;
-color: #ff9225;
-font-weight: 400;
-font-family: "Love Ya Like A Sister";
+.jak-to-dziala .item .right h1,
+.jak-to-dziala .item .up h1 {
+  font-size: 2rem;
+  width: 15rem;
+  line-height: 36px;
+  color: #ff9225;
+  font-weight: 400;
+  font-family: "Love Ya Like A Sister";
 }
-.jak-to-dziala .item .right p {
-  font-size: 26px;
-line-height: 36px;
-color: #ff9225;
-font-weight: 400;
-font-family: "Love Ya Like A Sister";
+.jak-to-dziala .item .right p,
+.jak-to-dziala .item .up p {
+  width: 293px;
+  height: 87px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d4d4d;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.one-line {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  height: 4rem;
+}
+.top-item {
+  clip-path: ellipse(50% 40% at 50% 50%);
+  width: 130%;
+  height: 30rem;
+  background-color: white;
+}
+.middle-item {
+  margin-top: -17rem;
+  margin-bottom: 8rem;
+  padding-top: 0rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 2;
+}
+.item {
+  margin-top: 0rem;
+  padding-top: 0rem;
+  width: 50%;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.down-item {
+  margin-top: -5rem;
+  padding-top: 0rem;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 2;
+}
+.down-item h2 {
+  font-size: 2rem;
+  line-height: 36px;
+  color: #ff9225;
+  font-weight: 400;
+  font-family: "Love Ya Like A Sister";
+}
+.Cennik {
+  width: 100vw;
+  height: 50rem;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+  background-image: linear-gradient(-45deg, #531493 0%, #2c1585 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Cennik .content{
+  display: flex;
+  flex-direction: column;
+  width:80%;
+  height:90%;
+}
+.content .single-line{
+  display: flex;
+  align-items: center;
+}
+.Cennik h2 {
+  font-size: 50px;
+  line-height: 49px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.Cennik h1 {
+  font-size: 15px;
+  line-height: 49px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+.left-ad{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width:30%;
+  height:35rem;
+  background-color: white;
+  margin-right: 0.5rem;
+}
+.right-ad{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width:70%;
+  height:35rem;
+  background-color: white;
+  margin-left: 0.5rem;
 }

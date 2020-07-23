@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+}
+.nawigacja {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.logo-div {
+  margin-top: 3rem;
+  width: 18rem;
+  height: 7rem;
+  border: 10px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  font-size: 5rem;
+  line-height: 77px;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.left h1 {
+  font-size: 2rem;
+}
+.separator {
+  width: 1px;
+  height: 30px;
+  background-color: #f2f2f2;
+  margin: 0 1rem;
+}
+.middle {
+  width: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.middle h1 {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+.right {
+  margin-top: -4rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.right h1 {
+  margin: 0 1rem;
+  font-size: 1rem;
+  line-height: 49px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+.baner {
+  width: 100vw;
+  height: 50rem;
+  display: flex;
+}
+.baner-lewy {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.baner-lewy .content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.baner-lewy h2 {
+  margin-bottom: 0;
+  font-size: 3rem;
+  line-height: 49px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.przyciski {
+  margin-top: 1.5rem;
+  display: flex;
+}
+.baner-lewy p {
+  width: 700px;
+  height: 61px;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: url("./imgs/Background.png");
+  background-size: 100% 100%;
+}
+.baner-lewy button {
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #ffffff00;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.baner-lewy button h1 {
+  font-size: 15px;
+  line-height: 49px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.baner-lewy button:first-of-type {
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  background: white;
+  margin-right: 1rem;
+}
+.baner-lewy button:first-of-type h1 {
+  font-size: 15px;
+  line-height: 49px;
+  color: #ee8c19;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.baner-prawy {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.baner-prawy img {
+  margin-top: -3rem;
+  width: 30rem;
+}
+.jak-to-dziala {
+  background-color: white;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jak-to-dziala h2 {
+  font-size: 3rem;
+  line-height: 49px;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+}
+.jak-to-dziala .item .left,
+.jak-to-dziala .item .right
+{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+}
+.jak-to-dziala .item .left img {
+  width: 20rem;
+  height:40rem;
+}
+.jak-to-dziala .item .right h2 {
+  font-size: 70px;
+  line-height: 36px;
+  color: #ff9225;
+  font-weight: 400;
+  font-family: "Love Ya Like A Sister";
+}
+.jak-to-dziala .item .right h1 {
+  font-size: 26px;
+line-height: 36px;
+color: #ff9225;
+font-weight: 400;
+font-family: "Love Ya Like A Sister";
+}
+.jak-to-dziala .item .right p {
+  font-size: 26px;
+line-height: 36px;
+color: #ff9225;
+font-weight: 400;
+font-family: "Love Ya Like A Sister";
+}

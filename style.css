@@ -72,6 +72,7 @@ a{
 }
 .right h1:hover{
   cursor: pointer;
+  color: #f5b035;
 }
 .baner {
   z-index:3;
@@ -130,8 +131,6 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.baner-lewy button h1 {
   font-size: 15px;
   line-height: 49px;
   color: #ffffff;
@@ -139,20 +138,28 @@ a{
   font-family: "Montserrat";
   text-align: center;
 }
+.baner-lewy button:hover{
+  cursor: pointer;
+  background: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+  color:white;
+}
 .baner-lewy button:first-of-type {
   width: 180px;
   height: 40px;
   border-radius: 5px;
   background: white;
   margin-right: 1rem;
-}
-.baner-lewy button:first-of-type h1 {
   font-size: 15px;
   line-height: 49px;
   color: #ee8c19;
   font-weight: 600;
   font-family: "Montserrat";
   text-align: center;
+}
+.baner-lewy button:first-of-type:hover{
+  cursor: pointer;
+  background: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+  color:white;
 }
 .baner-prawy {
   width: 40%;
@@ -286,10 +293,36 @@ a{
   height: 4rem;
 }
 .top-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   clip-path: ellipse(50% 40% at 50% 50%);
   width: 130%;
   height: 30rem;
   background-color: white;
+}
+.middle-item button{
+  background-image: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f5b035;
+  z-index: 3;
+  width:2rem;
+  height:2rem;
+  margin-top: -11rem;
+  margin-bottom: 5rem;
+  border-radius: 5px;
+}
+.middle-item button:hover{
+  cursor: pointer;
+  background: #ef7a13;
+}
+.middle-item button img{
+  width:70%;
+  height:50%;
+  filter: brightness(0) invert(1);
 }
 .middle-item {
   margin-top: -17rem;
@@ -298,6 +331,8 @@ a{
   width: 100%;
   background-color: white;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   justify-content: center;
   z-index: 2;
@@ -584,7 +619,7 @@ font-family: "Montserrat";
   position: absolute;
   z-index: 10;
   width:30rem;
-  height:20rem;
+  height:auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -593,13 +628,9 @@ font-family: "Montserrat";
   border:2px solid #f5b035;
   border-radius: 10px;
 }
-.register-form{
-  height:40rem;
-}
 .login-content,
 .register-content{
   width:55%;
-  height:90%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -617,6 +648,10 @@ font-family: "Montserrat";
   color:white;
   border: 1.0px solid #f5b035;
   border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.register-content input{
+  margin-bottom: 2rem;
 }
 .login-content p,
 .register-content p{
@@ -636,6 +671,7 @@ font-family: "Montserrat";
   margin-right: 2rem;
   color:white;
   border: 1px solid #f5b035;
+  margin-bottom: 2rem;
 }
 .login-content button:hover,
 .register-content button:hover{
@@ -643,4 +679,14 @@ font-family: "Montserrat";
   color: #f5b035;
   border: 1px solid #f5b035;
   cursor: pointer;
+}
+.single-line button:hover{
+  cursor: pointer;
+  background: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+  color:white;
+}
+.single-line button:first-of-type:hover{
+  cursor: pointer;
+  background: white;
+  color:#f5b035;
 }

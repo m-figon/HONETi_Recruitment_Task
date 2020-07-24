@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="imgs/paw.png">
+  <link rel="icon" href="imgs/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
   <title>Lorem Ipsum</title>
@@ -23,9 +23,15 @@
       <div class="middle">
       </div>
       <div class="right">
-        <a href="#/"><h1>Start</h1></a>
-        <a href="#jak-to-dziala"><h1>Jak to działa?</h1></a>
-        <a href="#cennik"><h1>Cennik</h1></a>
+        <a href="#/">
+          <h1>Start</h1>
+        </a>
+        <a href="#jak-to-dziala" id="show">
+          <h1>Jak to działa?</h1>
+        </a>
+        <a href="#cennik">
+          <h1>Cennik</h1>
+        </a>
         <div class="separator"></div>
         <h1>Logowanie</h1>
         <h1>Rejestracja</h1>
@@ -39,11 +45,11 @@
             dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
             vel facilisis.</p>
           <div class="przyciski">
+            <a href="#jak-to-dziala" id="show2"><button>
+              O aplikacji
+            </button></a>
             <button>
-              <h1>O aplikacji</h1>
-            </button>
-            <button>
-              <h1>Pobierz</h1>
+              Pobierz
             </button>
           </div>
         </div>
@@ -54,9 +60,10 @@
     </div>
     <div class="jak-to-dziala" id="jak-to-dziala">
       <div class="top-item">
-
       </div>
       <div class="middle-item">
+        <button><img src="imgs/doubleArrow.png"></button>
+
         <h2>Jak to działa?</h2>
 
       </div>
@@ -153,8 +160,8 @@
                 </ul>
                 <h1>Dołącz do zabawy już dziś!</h1>
                 <div class="single-line">
-                  <img src="imgs/appStore.png">
-                  <img src="imgs/googlePlay.png">
+                  <a href="https://apps.apple.com/pl/developer/apple/id284417353?l=pl"><img src="imgs/appStore.png"></a>
+                  <a href="https://play.google.com/store"><img src="imgs/googlePlay.png"></a>
                 </div>
               </div>
             </div>
@@ -169,7 +176,6 @@
             </div>
             <div class="smaller-row">
               <div class="right-big-column">
-
               </div>
               <div class="right-column">
                 <h1>Basic</h1>
@@ -179,6 +185,8 @@
                 <h1>Premium</h1>
                 <select value="90">
                   <option value="90">90 dni</option>
+                  <option value="180">180 dni</option>
+                  <option value="360">360 dni</option>
                 </select>
                 <div class="single-line">
                   <h2>79,99zł</h2>
@@ -198,7 +206,7 @@
                 <p>ut labore et dolor magna aliqua</p>
                 <div class="sign-end">
                   <div class="single-line">
-                  <h1>Zarejestruj sie i wyprobuj!</h1>
+                    <h1>Zarejestruj sie i wyprobuj!</h1>
                   </div>
                   <div class="single-line">
                     <button>Rejestracja</button>

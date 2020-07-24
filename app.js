@@ -2,7 +2,7 @@
 (function ($) {
 
   var app = $.sammy('#main', function () {
-    this.get('#/', function (context) {
+    function navigationFunc(context){
       $('.nawigacja .right h1:eq(3)').on('click', () => {
         context.app.setLocation("#/#login");
         location.reload();
@@ -11,8 +11,33 @@
         context.app.setLocation("#/#register");
         location.reload();
       })
+      $('.middle-item button').on('click', () => {
+        console.log('clicked!');
+        $('.jak-to-dziala').css('display', 'none');
+      })
+      $(".single-line button").on('click',()=>{
+        context.app.setLocation("#/#login");
+        location.reload();
+      })
+      $(".single-line button:first-of-type").on('click',()=>{
+        context.app.setLocation("#/#register");
+        location.reload();
+      })
+      
+      $('#show').on('click', () => {
+        console.log('clicked!');
+        $('.jak-to-dziala').css('display', 'flex');
+      })
+      $('#show2').on('click', () => {
+        console.log('clicked!');
+        $('.jak-to-dziala').css('display', 'flex');
+      })
+    }
+    this.get('#/', function (context) {
+      navigationFunc(context);
     });
     this.get('#/#login', function (context) {
+      navigationFunc(context);
       let users;
       fetch('https://honeti-backend.herokuapp.com/users')
         .then(response => response.json())
@@ -30,8 +55,7 @@
       $('.login-content').append('<input type="text" value="Podaj hasło...">');
       $('.login-content').append('<button>Zaloguj</button>');
       $('.cancel-button button').on('click', () => {
-        context.app.setLocation("#/");
-        location.reload();
+        $('.login').remove();
       })
       $('.login-content input:eq(0)').on('focus', (e) => {
         if (e.target.value === "Wpisz nazwe konta...") {
@@ -60,10 +84,21 @@
           if (item.account === $('.login-content input:eq(0)')[0].value && item.password === $('.login-content input:eq(1)')[0].value) {
             alert('correct login');
             $('.login-content p:eq(0)').css("display", "none");
-            $('.nawigacja .right').append("<h1>"+$('.login-content input:eq(0)')[0].value+"</h1>")
-            $('.login-content input:eq(0)')[0].value="Wpisz nazwe konta...";
-            $('.login-content input:eq(1)')[0].value="Podaj hasło...";
-            $('.login-content input:eq(1)')[0].type="text";
+            $('.nawigacja .right').append("<h1>" + $('.login-content input:eq(0)')[0].value + "</h1>")
+            $('.nawigacja .right h1:eq(3)')[0].innerText="Wyloguj";
+            $('.nawigacja .right h1:eq(3)').off();
+            $('.nawigacja .right h1:eq(3)').on('click',()=>{
+              $('.nawigacja .right h1:eq(5)')[0].remove();
+              $('.nawigacja .right h1:eq(3)')[0].innerText="Zaloguj";
+              $('.nawigacja .right h1:eq(3)').off();
+              $('.nawigacja .right h1:eq(3)').on('click', () => {
+                context.app.setLocation("#/#login");
+                location.reload();
+              })
+            })
+            $('.login-content input:eq(0)')[0].value = "Wpisz nazwe konta...";
+            $('.login-content input:eq(1)')[0].value = "Podaj hasło...";
+            $('.login-content input:eq(1)')[0].type = "text";
           } else {
             $('.login-content p:eq(0)').css("display", "block");
           }
@@ -71,6 +106,7 @@
       });
     });
     this.get('#/#register', function (context) {
+      navigationFunc(context);
       $('.app').append('<div class="register"></div>');
       $('.register').append('<div class="register-form"></div>');
       $('.register-form').append('<div class="register-content"></div>');
@@ -86,8 +122,7 @@
       $('.register-content').append('<p>Niepoprawnie potwierdzonie hasło lub złe hasło z poprzedniej rubryki</p>');
       $('.register-content').append('<button>Zarejestruj</button>');
       $('.cancel-button button').on('click', () => {
-        context.app.setLocation("#/");
-        location.reload();
+        $('.register').remove();
       })
       $('.register-content input:eq(0)').on('focus', (e) => {
         if (e.target.value === "Wpisz nazwe konta...") {
@@ -183,7 +218,6 @@
             context.app.setLocation("#/");
             location.reload();
           });
-
         }
       });
     });

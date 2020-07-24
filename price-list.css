@@ -1,0 +1,225 @@
+@import "style.css";
+
+.price-list {
+    z-index: 3;
+    width: 100vw;
+    height: 50rem;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+    background-image: linear-gradient(-45deg, #531493 0%, #2c1585 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-list .content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+}
+.content .single-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.price-list h2 {
+    font-size: 50px;
+    line-height: 49px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.price-list h1 {
+    font-size: 15px;
+    line-height: 49px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.left-ad,
+.right-ad {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 38rem;
+    background-color: white;
+    margin-left: 0.5rem;
+}
+.left-ad {
+    width: 30%;
+}
+.right-ad {
+    width: 60%;
+}
+.smaller-row {
+    border-bottom: 1px solid var(--light-orange);
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.smaller-row h1,
+.smaller-row h2 {
+    margin: 0;
+    line-height: 30px;
+    color: var(--black);
+    font-weight: 700;
+    text-align: center;
+}
+.smaller-row h2 {
+    font-size: 2rem;
+}
+.smaller-row h1 {
+    font-size: 1rem;
+}
+.smaller-row img {
+    width: 4rem;
+    height: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    filter: drop-shadow(-3.716px 3.346px 5px rgba(0, 0, 0, 0.25));
+}
+.bigger-row {
+    width: 100%;
+    display: flex;
+    height: 21rem;
+}
+.bigger-row h1 {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black);
+    font-weight: 700;
+    text-align: center;
+}
+.bigger-row .single-line img {
+    width: 7rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+.bigger-row-content {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+li {
+    font-size: 1rem;
+    line-height: 30px;
+    color: var(--black);
+    font-weight: 400;
+}
+ul {
+    list-style: none;
+    margin-bottom: 4rem;
+    padding-left: 0;
+}
+
+ul li:before {
+    content: "✓";
+    color: var(--light-orange);
+    font-weight: 700;
+    font-family: var(--main-font);
+    margin-right: 1rem;
+}
+#center {
+    justify-content: center;
+    align-items: center;
+}
+.right-column,
+.right-big-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.right-column {
+    width: 25%;
+}
+.right-big-column {
+    width: 50%;
+}
+.right-column h1,
+.right-big-column h1 {
+    font-size: 1rem;
+    line-height: 30px;
+    color: var(--orange);
+    font-weight: 700;
+}
+.right-column h2,
+.right-big-column h2 {
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: var(--black);
+    font-weight: 700;
+}
+.right-column p,
+.right-big-column p {
+    font-size: 1rem;
+    line-height: 30px;
+    margin: 0;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+#gray {
+    color: rgb(177, 177, 177);
+}
+#orange {
+    color: var(--orange);
+}
+#to-left {
+    padding-left: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1.5rem;
+}
+#to-up {
+    padding-top: 1.5rem;
+    justify-content: flex-start;
+}
+.sign-end h1 {
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+.sign-end button {
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: var(--light-orange);
+    border: 1px solid var(--light-orange);
+}
+.sign-end button:first-of-type {
+    background-image: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+    margin-right: 2rem;
+    color: white;
+}
+.right-ad select {
+    padding: 0.2rem 0.2rem;
+    width: 6rem;
+    border-radius: 3px;
+}
+#green {
+    font-size: 0.8rem;
+    line-height: 30px;
+    color: #33a829;
+    font-weight: 700;
+}
+.single-line button:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+    color: white;
+}
+.single-line button:first-of-type:hover {
+    cursor: pointer;
+    background: white;
+    color: var(--light-orange);
+}

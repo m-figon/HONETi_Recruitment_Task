@@ -5,7 +5,7 @@
     function navigationFunc(context) {
       let str = ['#/#login', '#/#register'];
       for (let i = 0; i < str.length; i++) {
-        $('.nawigacja .right h1:eq(' + (i + 3) + ')').on('click', () => {
+        $('.nav-bar .right h1:eq(' + (i + 3) + ')').on('click', () => {
           context.app.setLocation(str[i]);
         })
       }
@@ -79,19 +79,19 @@
         for (let item of users) {
           if (item.account === $('.login-content input:eq(0)')[0].value && item.password === $('.login-content input:eq(1)')[0].value) {
             alert('correct login');
-            $('.nawigacja .right').append("<h1>" + $('.login-content input:eq(0)')[0].value + "</h1>")
-            $('.nawigacja .right h1:eq(3)')[0].innerText = "Wyloguj";
-            $('.nawigacja .right h1:eq(3)').off();
+            $('.nav-bar .right').append("<h1>" + $('.login-content input:eq(0)')[0].value + "</h1>")
+            $('.nav-bar .right h1:eq(3)')[0].innerText = "Wyloguj";
+            $('.nav-bar .right h1:eq(3)').off();
             $('.login-content input:eq(0)')[0].value = "Wpisz nazwe konta...";
             $('.login-content input:eq(1)')[0].value = "Podaj hasło...";
             $('.login-content input:eq(1)')[0].type = "text";
             $('.login-content p:eq(0)').css("display", "none");
             correctFlag = true;
-            $('.nawigacja .right h1:eq(3)').on('click', () => {
-              $('.nawigacja .right h1:eq(5)')[0].remove();
-              $('.nawigacja .right h1:eq(3)')[0].innerText = "Zaloguj";
-              $('.nawigacja .right h1:eq(3)').off();
-              $('.nawigacja .right h1:eq(3)').on('click', () => {
+            $('.nav-bar .right h1:eq(3)').on('click', () => {
+              $('.nav-bar .right h1:eq(5)')[0].remove();
+              $('.nav-bar .right h1:eq(3)')[0].innerText = "Zaloguj";
+              $('.nav-bar .right h1:eq(3)').off();
+              $('.nav-bar .right h1:eq(3)').on('click', () => {
                 context.app.setLocation("#/#login");
               })
             })

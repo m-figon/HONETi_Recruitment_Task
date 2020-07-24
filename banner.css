@@ -1,0 +1,84 @@
+@import "style.css";
+
+.banner {
+    z-index: 3;
+    width: 100vw;
+    height: 30rem;
+    display: flex;
+}
+.banner-left {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-left .content {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-left h2 {
+    margin-bottom: 0;
+    font-size: 3rem;
+    line-height: 49px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.banner-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+}
+.banner-left p {
+    width: 700px;
+    height: 61px;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.banner-buttons button {
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffffff00;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 49px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: var(--main-font);
+    text-align: center;
+}
+.banner-buttons button:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+    color: white;
+}
+.banner-buttons a button {
+    background: white;
+    margin-right: 1rem;
+    color: #ee8c19;
+}
+.banner-buttons a button:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+    color: white;
+}
+.banner-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.banner-right img {
+    margin-top: -3rem;
+    width: 30rem;
+}

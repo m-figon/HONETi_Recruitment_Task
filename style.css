@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 .nawigacja {
+  z-index:3;
   width: 100%;
   display: flex;
   align-items: center;
@@ -67,6 +68,7 @@ body {
   font-family: "Montserrat";
 }
 .baner {
+  z-index:3;
   width: 100vw;
   height: 30rem;
   display: flex;
@@ -158,6 +160,7 @@ body {
   width: 30rem;
 }
 .jak-to-dziala {
+  z-index:3;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -318,6 +321,7 @@ body {
   font-family: "Love Ya Like A Sister";
 }
 .Cennik {
+  z-index:3;
   width: 100vw;
   height: 50rem;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
@@ -549,4 +553,87 @@ font-family: "Montserrat";
   line-height: 30px;
   color: #33a829;
   font-weight: 700;
-  font-family: "Montserrat";}
+  font-family: "Montserrat";
+}
+.login,
+.register{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.473);
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+  z-index: 5;
+}
+.cancel-button{
+  width:140%;
+  display: flex;
+  justify-content: flex-end;
+}
+.login-form,
+.register-form{
+  position: absolute;
+  z-index: 10;
+  width:30rem;
+  height:20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./imgs/Background.png');
+  background-size: 100% 100%;
+  border:2px solid #f5b035;
+  border-radius: 10px;
+}
+.register-form{
+  height:40rem;
+}
+.login-content,
+.register-content{
+  width:55%;
+  height:90%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-content input,
+.register-content input{
+  margin: 1rem 0;
+  padding-left: 0.5rem;
+  width: 15rem;
+  height: 1.7rem;
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  background-color: rgba(0, 0, 0, 0);
+  color:white;
+  border: 1.0px solid #f5b035;
+  border-radius: 10px;
+}
+.login-content p,
+.register-content p{
+  font-family: "Montserrat";
+  margin: 0 0;
+  font-size: 1rem;
+  color: white;
+}
+.login-content button,
+.register-content button{
+  margin-top: 1rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-image: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+  margin-right: 2rem;
+  color:white;
+  border: 1px solid #f5b035;
+}
+.login-content button:hover,
+.register-content button:hover{
+  background: #ffffff;
+  color: #f5b035;
+  border: 1px solid #f5b035;
+  cursor: pointer;
+}

@@ -94,3 +94,70 @@
         font-size: 1.8rem;
     }
 }
+@media only screen and (max-width: 700px) {
+    .left{
+        width:30%;
+    }
+    .right{
+        width:70%;
+    }
+    .logo-div {
+        width: 6rem;
+        height: 3rem;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+    }
+    #logo {
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .logo-div{
+        width:4rem;
+        height: 2rem;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    #logo{
+        font-size: 1.2rem;
+    }
+    .left{
+        width:20%;
+    }
+    .right{
+        width:80%;
+    }
+    .right{
+        margin-top: -1rem;
+    }
+    .right h1{
+        margin: 0 0.3rem;
+        font-size: 0.7rem;
+    }
+    .separator{
+        margin: 0 0.5rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .logo-div{
+        margin-top: 0;
+        width:2.5rem;
+        height: 1.2rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .left{
+        width:15%;
+    }
+    .right h1{
+        margin: 0 0.2rem;
+        font-size: 0.65rem;
+    }
+    .right{
+        margin-top: 0;
+        width:85%
+    }
+    #logo{
+        font-size: 0.7rem;
+    }
+    .separator{
+        margin: 0 0.2rem;
+    }
+}

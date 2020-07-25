@@ -19,7 +19,7 @@
       }
       for (let i = 1; i < 3; i++) {
         $('#show' + i).on('click', () => {
-          $('.jak-to-dziala').css('display', 'flex');
+          $('.how-does-it-work').css('display', 'flex');
         })
       }
     }

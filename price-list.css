@@ -224,17 +224,17 @@ ul li:before {
     color: var(--light-orange);
 }
 @media only screen and (max-width: 1600px) {
-    .price-list h2{
+    .price-list h2 {
         font-size: 2.5rem;
     }
-    li{
+    li {
         font-size: 0.8rem;
     }
     .right-column p,
-    .right-big-column p{
+    .right-big-column p {
         font-size: 0.8rem;
     }
-    ul li:before{
+    ul li:before {
         margin-right: 0.5rem;
     }
     .smaller-row h2 {
@@ -251,32 +251,130 @@ ul li:before {
         height: 2rem;
         margin-right: 1rem;
     }
-    .sign-end h1{
+    .sign-end h1 {
         font-size: 1rem;
     }
-    .sign-end button{
-        width:150px;
-        height:35px;
+    .sign-end button {
+        width: 150px;
+        height: 35px;
     }
     .smaller-row {
         height: 6rem;
     }
-    .right-ad{
-        height:35rem;
-    }
-    .left-ad{
+    .right-ad {
         height: 35rem;
     }
-    .top-item{
-        clip-path: ellipse(32% 40% at 50% 50%);
-        width:220%;
-        margin-top:-0rem;
+    .left-ad {
+        height: 35rem;
     }
-    .how-does-it-work{
+    .top-item {
+        width: 220%;
+        margin-top: -0rem;
+    }
+    .top-item {
+        margin-top: 6rem;
+    }
+    .how-does-it-work {
         overflow: auto;
         margin-top: -8rem;
     }
-    .price-list{
-        margin-top:-1rem;
+    .price-list {
+        margin-top: -1rem;
+    }
+}
+@media only screen and (max-width: 1160px) {
+    .price-list .content {
+        width: 95%;
+    }
+    .bigger-row{
+        justify-content: center;
+    }
+    .bigger-row h1{
+        font-size: 0.7rem;
+    }
+    .smaller-row img{
+        width:3rem;
+        height:7rem;
+        margin-right: 0.5rem;
+    }
+    ul li{
+        font-size: 0.7rem;
+    }
+    .right-column p,
+    .right-big-column p{
+        font-size: 0.7rem;
+    }
+    .smaller-row h2{
+        font-size: 1rem;
+    }
+    #green{
+        font-size: 0.7rem;
+    }
+    .right-column{
+        width:50%;
+    }
+    .sign-end button{
+        width:100px;
+        height:30px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .how-does-it-work {
+        margin-top: -13rem;
+    }
+    .banner {
+        height: 25rem;
+    }
+    .top-item {
+        margin-top: 15rem;
+    }
+    .banner-right img {
+        margin-top: 1rem;
+    }
+    
+}
+@media only screen and (max-width: 950px) {
+    .top-item {
+        margin-top: 17rem;
+    }
+    .banner-right img {
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .how-does-it-work {
+        margin-top: -22rem;
+    }
+    .top-item {
+        height: 40rem;
+    }
+    .middle-item {
+        margin-top: -26rem;
+    }
+}
+@media only screen and (max-width: 830px) {
+    ul{
+        margin-bottom: 0rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .how-does-it-work {
+        margin-top: -29rem;
+    }
+    .top-item {
+        height: 50rem;
+    }
+    .middle-item {
+        margin-top: -35rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .top-item {
+        width: 250%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .banner-right img {
+        margin-top: 5rem;
     }
 }

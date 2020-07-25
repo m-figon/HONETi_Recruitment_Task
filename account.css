@@ -83,3 +83,38 @@
     border: 1px solid var(--light-orange);
     cursor: pointer;
 }
+@media only screen and (max-width: 650px) {
+    .login-form,
+    .register-form {
+        width: 20rem;
+    }
+    .login-content,
+    .register-content {
+        width: auto;
+    }
+    .login-content input,
+    .register-content input {
+        font-size: 0.8rem;
+    }
+    .cancel-button {
+        width: 120%;
+    }
+    .login-content p,
+    .register-content p{
+        font-size: 0.8rem;
+        width:12rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .login-form, .register-form {
+        width: 17rem;
+    }
+    .login-content input,
+    .register-content input {
+        width: 12rem;
+    }
+    .login-content button,
+    .register-content button{
+        font-size: 0.8rem;
+    }
+}

@@ -282,7 +282,7 @@ ul li:before {
         margin-top: -1rem;
     }
 }
-@media only screen and (max-width: 1160px) {
+@media only screen and (max-width: 1200px) {
     .price-list .content {
         width: 95%;
     }
@@ -369,12 +369,42 @@ ul li:before {
     }
 }
 @media only screen and (max-width: 700px) {
+    
+    .bigger-row-content .single-line,
+    .sign-end .single-line,
+    #title-line{
+        flex-direction: row;
+    }
+    #title-line h2{
+        font-size: 1.6rem;
+    }
+    #title-line h1{
+        font-size: 0.7rem;
+    }
+    #title-line{
+        margin-left:8rem;
+    }
+    #to-left p{
+        font-size: 1rem;
+    }
     .top-item {
         width: 250%;
     }
-}
-@media only screen and (max-width: 600px) {
-    .banner-right img {
-        margin-top: 5rem;
+    .single-line{
+        flex-direction: column;
+    }
+    .price-list{
+        height:auto;
+    }
+    .left-ad{
+        width:90%;
+        margin-bottom: 2rem;
+    }
+    .right-ad{
+        width:90%;
+    }
+    .right-ad{
+        height:45rem;
+        margin-bottom: 2rem;
     }
 }

@@ -47,6 +47,7 @@
     margin-left: 10rem;
     height: 50%;
     display: flex;
+    width:15rem;
     flex-direction: column;
 }
 .down {
@@ -69,10 +70,13 @@
 #arrow2 {
     transform: rotate(-230deg);
     margin-top: -10rem;
+    margin-left: -10rem;
+
 }
 #arrow3 {
     width: 7rem;
     height: 7rem;
+    margin-left: 3rem;
 }
 #phone1 {
     transform: rotate(-20deg);
@@ -237,13 +241,11 @@
         width: 4rem;
         height: 4rem;
         margin-top:20rem;
-        margin-left: -5rem;
+        margin-left: 0rem;
     }
 }
 @media only screen and (max-width: 1200px) {
-    .price-list .content{
-        width:90%;
-    }
+    
     .how-does-it-work h2{
         font-size: 1.5rem;
     }
@@ -285,11 +287,11 @@
     }
     #phone2{
         margin-left: -8rem;
-        margin-top:-6rem;
+        margin-top:13rem;
     }
     #phone3{
         margin-top:10rem;
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
     #arrow1,
     #arrow2,
@@ -313,5 +315,241 @@
     }
     .down-item{
         margin-top:-2rem;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    
+    .how-does-it-work h2{
+        font-size: 1.3rem;
+    }
+    .how-does-it-work .item .left img,
+    .how-does-it-work .item .down img {
+        width: 7rem;
+        height: 14rem;
+    }
+    .how-does-it-work .item .right h2,
+    .how-does-it-work .item .up h2 {
+        font-size: 2.0rem;
+    }
+    .how-does-it-work .item .right h1,
+    .how-does-it-work .item .up h1 {
+        font-size: 1.5rem;
+        width: 200px;
+    }
+    .how-does-it-work .item .right p,
+    .how-does-it-work .item .up p {
+        font-size: 0.7rem;
+        line-height: 15px;
+        width:150px;
+    }
+    #item1 {
+        margin-left: -15rem;
+        margin-top: -10rem;
+    }
+    #item2 {
+        margin-left: 30rem;
+        margin-top: -20rem;
+    }
+    #item3 {
+        margin-left: -15rem;
+        margin-top: -15rem;
+    }
+    #item4 {
+        margin-left: 10rem;
+        margin-top: -60rem;
+    }
+    #phone1{
+        margin-left:-2rem;
+    }
+    #phone2{
+        margin-left:-3rem;
+        margin-top:17rem;
+    }
+    #phone3{
+        margin-top:10rem;
+        margin-left: -3rem;
+    }
+    #arrow1,
+    #arrow2,
+    #arrow3,
+    #arrow4 {
+        width: 3rem;
+    }
+    #arrow1 {
+        margin-left: -10rem;
+        margin-top: 17rem;
+    }
+    #arrow2 {
+        margin-top: 15rem;
+        margin-left: 5rem;
+    }
+    #arrow3 {
+        width: 3rem;
+        height: 3rem;
+        margin-top:55rem;
+        margin-left: 0rem;
+    }
+    .down-item{
+        margin-top:-2rem;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .how-does-it-work h2{
+        font-size: 1.2rem;
+    }
+    .how-does-it-work .item .left img,
+    .how-does-it-work .item .down img {
+        width: 6rem;
+        height: 12rem;
+    }
+    .how-does-it-work .item .right h2,
+    .how-does-it-work .item .up h2 {
+        font-size: 1.5rem;
+    }
+    .how-does-it-work .item .right h1,
+    .how-does-it-work .item .up h1 {
+        font-size: 1.0rem;
+        line-height: 15px;
+        width: 120px;
+    }
+    .how-does-it-work .item .right p,
+    .how-does-it-work .item .up p {
+        font-size: 0.6rem;
+        line-height: 15px;
+        width:120px;
+    }
+    #item1 {
+        margin-left: -5rem;
+        margin-top: -10rem;
+    }
+    #item2 {
+        margin-left: 20rem;
+        margin-top: -20rem;
+    }
+    #item3 {
+        margin-left: -5rem;
+        margin-top: -15rem;
+    }
+    #item4 {
+        margin-left: 3rem;
+        margin-top: -60rem;
+    }
+    #phone1{
+        margin-left:-6rem;
+    }
+    #phone2{
+        margin-left:1rem;
+        margin-top:17rem;
+    }
+    #phone3{
+        margin-top:10rem;
+        margin-left: -8rem;
+    }
+    #arrow1,
+    #arrow2,
+    #arrow3,
+    #arrow4 {
+        width: 2rem;
+    }
+    #arrow1 {
+        margin-left: 1rem;
+        margin-top: 20rem;
+    }
+    #arrow2 {
+        margin-top: 15rem;
+        margin-left: -5rem;
+    }
+    #arrow3 {
+        width: 2rem;
+        height: 2rem;
+        margin-top:55rem;
+        margin-left: 3rem;
+    }
+    .down-item{
+        margin-top:-2rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+        .how-does-it-work h2{
+            font-size: 1.2rem;
+        }
+        .how-does-it-work .item .left img,
+        .how-does-it-work .item .down img {
+            width: 5rem;
+            height: 10rem;
+        }
+        .how-does-it-work .item .right h2,
+        .how-does-it-work .item .up h2 {
+            font-size: 1.2rem;
+        }
+        .how-does-it-work .item .right h1,
+        .how-does-it-work .item .up h1 {
+            font-size: 0.8rem;
+            line-height: 15px;
+            width: 100px;
+        }
+        .how-does-it-work .item .right p,
+        .how-does-it-work .item .up p {
+            font-size: 0.6rem;
+            line-height: 15px;
+            width:120px;
+        }
+        #item1 {
+            margin-left: -2rem;
+            margin-top: -10rem;
+        }
+        #item2 {
+            margin-left: 10rem;
+            margin-top: -25rem;
+        }
+        #item3 {
+            margin-left: 1rem;
+            margin-top: -20rem;
+        }
+        #item4 {
+            margin-left: -7rem;
+            margin-top: -60rem;
+        }
+        #phone1{
+            margin-left:-6rem;
+        }
+        #phone2{
+            margin-left:2rem;
+            margin-top:17rem;
+        }
+        #phone3{
+            margin-top:20rem;
+            margin-left: -8rem;
+        }
+        #arrow1,
+        #arrow2,
+        #arrow3,
+        #arrow4 {
+            width: 2rem;
+        }
+        #arrow1 {
+            margin-left: 5rem;
+            margin-top: 20rem;
+        }
+        #arrow2 {
+            margin-top: 15rem;
+            margin-left: -10rem;
+        }
+        #arrow3 {
+            width: 2rem;
+            height: 2rem;
+            margin-top:55rem;
+            margin-left: 7rem;
+        }
+        .down-item{
+            margin-top:-2rem;
+        }
+        #phone4{
+            margin-left: 2rem;
+        }
+}
+@media only screen and (max-width: 450px) {
+    #arrow3 {
+        margin-left: 5rem;
     }
 }

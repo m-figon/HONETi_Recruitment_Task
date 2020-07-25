@@ -82,3 +82,106 @@
     margin-top: -3rem;
     width: 30rem;
 }
+@media only screen and (max-width: 1500px) {
+    .banner-left h2 {
+        font-size: 2.2rem;
+    }
+    .banner-left p {
+        width: 500px;
+        font-size: 0.75rem;
+        line-height: 20px;
+    }
+    .banner-buttons{
+        margin-top: 0.5rem;
+    }
+    .banner-buttons button {
+        width: 130px;
+        height: 33px;
+    }
+    .banner-right img{
+        width:25rem;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .banner-left h2 {
+        font-size: 1.8rem;
+    }
+    .banner-left p {
+        font-size: 0.70rem;
+        line-height: 18px;
+    }
+    .banner-buttons{
+        margin-top: 0.1rem;
+    }
+    .banner-buttons button {
+        width: 110px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+    .banner-right img{
+        width:22rem;
+    }
+    .banner-left{
+        justify-content: flex-start;
+    }
+    .banner-left .content{
+        width: 100%;
+        align-items: flex-start;
+        margin-left: 3rem;
+    }
+    .banner-right {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .banner-left h2 {
+        font-size: 1.6rem;
+    }
+    .banner-left p {
+        font-size: 0.70rem;
+        line-height: 18px;
+    }
+    .banner-buttons{
+        margin-top: 0rem;
+    }
+    .banner-buttons button {
+        width: 100px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+    .banner-right img{
+        width:17rem;
+    }
+    .banner-left .content{
+        margin-left: 2rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .banner-left h2 {
+        font-size: 1.6rem;
+        margin-left: -1.5rem;
+    }
+    .banner-left p {
+        width: 300px;
+        font-size: 0.70rem;
+        line-height: 18px;
+    }
+    .banner-buttons{
+        margin-top: 2rem;
+        margin-left: -5rem;
+    }
+    .banner-buttons button {
+        width: 100px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+    .banner-right img{
+        width:14rem;
+    }
+    .banner-left .content{
+        align-items: center;
+        margin-left: 0rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+}

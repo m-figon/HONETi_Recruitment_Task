@@ -10,7 +10,7 @@
         })
       }
       $('.middle-item button').on('click', () => {
-        $('.jak-to-dziala').css('display', 'none');
+        $('.how-does-it-work').css('display', 'none');
       })
       for (let i = 0; i < str.length; i++) {
         $(".single-line button:eq(" + i + ")").on('click', () => {
@@ -23,6 +23,12 @@
         })
       }
     }
+    function loading(){
+      window.onload = function() {
+        $('.loading').css("display","none");
+        $('.app').css("display","block");
+      };
+    }
     function addForm(string) {
       $('.app').append('<div class="' + string + '"></div>');
       $('.' + string).append('<div class="' + string + '-form"></div>');
@@ -32,11 +38,13 @@
       $('.' + string + '-content').append('<input type="text" value="Wpisz nazwe konta...">');
     }
     this.get('#/', function (context) {
+      loading();
       navigationFunc(context);
       $('.login').remove();
       $('.register').remove();
     });
     this.get('#/#login', function (context) {
+      loading();
       navigationFunc(context);
       let users;
       fetch('https://honeti-backend.herokuapp.com/users')
@@ -103,6 +111,7 @@
       });
     });
     this.get('#/#register', function (context) {
+      loading();
       navigationFunc(context);
       addForm('register');
       $('.register-content').append('<p>Nazwa konta musi zawierac od 3 do 12 liter lub cyfr</p>');
@@ -174,6 +183,7 @@
       });
     });
     this.get('#/:default', function (context) {
+      loading();
       navigationFunc(context);
       $('.login').remove();
       $('.register').remove();

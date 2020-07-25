@@ -185,3 +185,58 @@
     font-weight: 400;
     font-family: var(--other-font);
 }
+@media only screen and (max-width: 1500px) {
+    .how-does-it-work h2{
+        font-size: 2rem;
+    }
+    .how-does-it-work .item .left img,
+    .how-does-it-work .item .down img {
+        width: 10rem;
+        height: 20rem;
+    }
+    .how-does-it-work .item .right h2,
+    .how-does-it-work .item .up h2 {
+        font-size: 3rem;
+    }
+    .how-does-it-work .item .right h1,
+    .how-does-it-work .item .up h1 {
+        font-size: 1.5rem;
+    }
+    .how-does-it-work .item .right p,
+    .how-does-it-work .item .up p {
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+    #item2 {
+        margin-left: 45rem;
+        margin-top: -3rem;
+    }
+    #item3 {
+        margin-left: -21rem;
+        margin-top: -15rem;
+    }
+    #item4 {
+        margin-left: 35rem;
+        margin-top: -30rem;
+    }
+    #arrow1,
+    #arrow2,
+    #arrow3,
+    #arrow4 {
+        width: 4rem;
+    }
+    #arrow1 {
+        margin-left: -15rem;
+        margin-top: -10rem;
+    }
+    #arrow2 {
+        margin-top: 7rem;
+        margin-left: 15rem;
+    }
+    #arrow3 {
+        width: 4rem;
+        height: 4rem;
+        margin-top:20rem;
+        margin-left: -5rem;
+    }
+}

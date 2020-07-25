@@ -184,43 +184,33 @@
     }
 }
 @media only screen and (max-width: 600px) {
-    .banner-left{
-        width:70%;
-    }
-    .banner-right{
-        width: 30%;
-    }
-    .banner-right img{
-        margin-top: 5rem;
-        width:10rem;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .banner-left{
-        width:70%;
-    }
     .banner-left .content{
         margin-left: -1rem;
     }
-    .banner-right{
-        width: 30%;
-    }
     .banner-left h2{
         font-size: 1.2rem;
-        margin-left: 1.0rem;
-    }
-    .banner-right img{
-        margin-top: 5rem;
-        width:10rem;
+        margin-left: 0.4rem;
     }
     .banner-left p {
         width: 200px;
         font-size: 0.65rem;
         line-height: 18px;
     }
+    .banner-left{
+        margin-left: 2rem;
+        width:75%;
+    }
+    .banner-right{
+        width: 35%;
+    }
+    .banner-right img{
+        margin-top: 5rem;
+        width:10rem;
+    }
     .banner-buttons{
         margin-top: 4rem;
         margin-left: 1.2rem;
+        z-index: 5;
     }
     .banner-buttons button {
         width: 100px;

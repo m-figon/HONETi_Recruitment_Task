@@ -337,9 +337,7 @@ ul li:before {
     .top-item {
         margin-top: 17rem;
     }
-    .banner-right img {
-        margin-top: 3rem;
-    }
+    
 }
 @media only screen and (max-width: 900px) {
     .how-does-it-work {
@@ -384,8 +382,11 @@ ul li:before {
     #title-line{
         margin-left:8rem;
     }
+    #to-left{
+        padding-left: 0.5rem;
+    }
     #to-left p{
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
     .top-item {
         width: 250%;
@@ -400,11 +401,19 @@ ul li:before {
         width:90%;
         margin-bottom: 2rem;
     }
+    
     .right-ad{
         width:90%;
-    }
-    .right-ad{
-        height:45rem;
+        height:37rem;
         margin-bottom: 2rem;
+    }
+    .smaller-row{
+        height:7rem;
+    }
+    #to-up p{
+        font-size: 0.7rem;
+    }
+    .right-big-column{
+        width:60%;
     }
 }

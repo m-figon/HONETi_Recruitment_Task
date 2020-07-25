@@ -161,6 +161,9 @@
     position: relative;
     z-index: 2;
 }
+.middle-item{
+    z-index: 5;
+}
 .middle-item {
     margin-top: -17rem;
     margin-bottom: 8rem;
@@ -495,7 +498,7 @@
             width:120px;
         }
         #item1 {
-            margin-left: -2rem;
+            margin-left:1rem;
             margin-top: -10rem;
         }
         #item2 {
@@ -503,7 +506,7 @@
             margin-top: -25rem;
         }
         #item3 {
-            margin-left: 1rem;
+            margin-left: 2rem;
             margin-top: -20rem;
         }
         #item4 {

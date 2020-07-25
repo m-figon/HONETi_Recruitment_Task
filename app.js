@@ -4,17 +4,18 @@
   var app = $.sammy(function () {
     function navigationFunc(context) {
       let str = ['#/#login', '#/#register'];
+      let str2 = ['#/#register', '#/#login'];
       for (let i = 0; i < str.length; i++) {
-        $('.nav-bar .right h1:eq(' + (i + 3) + ')').on('click', () => {
+        $('.nav-bar .right h1:eq(' + (i + 4) + ')').on('click', () => {
           context.app.setLocation(str[i]);
         })
       }
       $('.middle-item button').on('click', () => {
         $('.how-does-it-work').css('display', 'none');
       })
-      for (let i = 0; i < str.length; i++) {
+      for (let i = 0; i < str2.length; i++) {
         $(".single-line button:eq(" + i + ")").on('click', () => {
-          context.app.setLocation(str[i]);
+          context.app.setLocation(str2[i]);
         })
       }
       for (let i = 1; i < 3; i++) {
@@ -88,18 +89,18 @@
           if (item.account === $('.login-content input:eq(0)')[0].value && item.password === $('.login-content input:eq(1)')[0].value) {
             alert('correct login');
             $('.nav-bar .right').append("<h1>" + $('.login-content input:eq(0)')[0].value + "</h1>")
-            $('.nav-bar .right h1:eq(3)')[0].innerText = "Wyloguj";
-            $('.nav-bar .right h1:eq(3)').off();
+            $('.nav-bar .right h1:eq(4)')[0].innerText = "Wyloguj";
+            $('.nav-bar .right h1:eq(4)').off();
             $('.login-content input:eq(0)')[0].value = "Wpisz nazwe konta...";
             $('.login-content input:eq(1)')[0].value = "Podaj hasło...";
             $('.login-content input:eq(1)')[0].type = "text";
             $('.login-content p:eq(0)').css("display", "none");
             correctFlag = true;
-            $('.nav-bar .right h1:eq(3)').on('click', () => {
-              $('.nav-bar .right h1:eq(5)')[0].remove();
-              $('.nav-bar .right h1:eq(3)')[0].innerText = "Zaloguj";
-              $('.nav-bar .right h1:eq(3)').off();
-              $('.nav-bar .right h1:eq(3)').on('click', () => {
+            $('.nav-bar .right h1:eq(4)').on('click', () => {
+              $('.nav-bar .right h1:eq(6)')[0].remove();
+              $('.nav-bar .right h1:eq(4)')[0].innerText = "Zaloguj";
+              $('.nav-bar .right h1:eq(4)').off();
+              $('.nav-bar .right h1:eq(4)').on('click', () => {
                 context.app.setLocation("#/#login");
               })
             })

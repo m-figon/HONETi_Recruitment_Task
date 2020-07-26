@@ -1,21 +1,83 @@
 @import "style.css";
 
 .how-does-it-work {
-    z-index: 3;
+    z-index: 5;
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    margin-top: 0;
+    overflow: visible;
+    background-color: white;
 }
-.how-does-it-work h2 {
-    font-size: 2.5rem;
+.how-does-it-work h2,
+#how-does-it-work-title {
+    font-size: 2.0rem;
     line-height: 49px;
     color: var(--black);
     font-weight: 700;
     display: flex;
     justify-content: center;
+}
+#how-does-it-work-title {
+    margin-top: 10rem;
+}
+.how-does-it-work2,
+.how-does-it-work3{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;  
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+    margin-top:-6rem;
+    position: relative;
+    z-index:5;
+}
+.how-does-it-work3{
+    padding-bottom: 15rem;
+    z-index: 6;
+    display: flex;
+}
+.how-does-it-work{
+    padding-top:10rem;
+}
+.how-does-it-work2 button,
+.how-does-it-work button,
+.how-does-it-work3 button{
+    background-image: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f5b035;
+    z-index: 3;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.how-does-it-work3 button{
+    margin-left:0%;
+    margin-top:5rem;
+}
+.how-does-it-work2 button:hover,
+.how-does-it-work3 button:hover,
+.how-does-it-work button:hover{
+    cursor: pointer;
+    background: #ef7a13;
+}
+.how-does-it-work2 button img,
+.how-does-it-work button img,
+.how-does-it-work3 button img{
+    width: 70%;
+    height: 50%;
+    filter: brightness(0) invert(1);
 }
 .how-does-it-work .item .left,
 .how-does-it-work .item .right {
@@ -252,6 +314,9 @@
     .how-does-it-work h2{
         font-size: 1.5rem;
     }
+    #how-does-it-work-title{
+        font-size: 1.5rem;
+    }
     .how-does-it-work .item .left img,
     .how-does-it-work .item .down img {
         width: 7rem;
@@ -325,6 +390,9 @@
     .how-does-it-work h2{
         font-size: 1.3rem;
     }
+    #how-does-it-work-title{
+        font-size: 1.3rem;
+    }
     .how-does-it-work .item .left img,
     .how-does-it-work .item .down img {
         width: 7rem;
@@ -396,44 +464,12 @@
         margin-top:-2rem;
     }
 }
-.how-does-it-work2{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;  
-    width: 100%;
-    height: 2rem;
-    background-color: white;
-    margin-top:-6rem;
-    position: relative;
-    z-index:5;
-}
-.how-does-it-work2 button{
-    background-image: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #f5b035;
-    z-index: 3;
-    width: 2rem;
-    height: 2rem;
-    margin-top: 0rem;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-}
-.how-does-it-work2 button:hover {
-    cursor: pointer;
-    background: #ef7a13;
-}
-.how-does-it-work2 button img {
-    width: 70%;
-    height: 50%;
-    filter: brightness(0) invert(1);
-}
+
 @media only screen and (max-width: 750px) {
     .how-does-it-work h2{
+        font-size: 1.2rem;
+    }
+    #how-does-it-work-title{
         font-size: 1.2rem;
     }
     .how-does-it-work .item .left img,

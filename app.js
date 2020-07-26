@@ -15,8 +15,9 @@
       $('.nav-bar .right h1:eq(6)').on('click', () => { //changing to register url
         context.app.setLocation('#/#register');
       })
-      $('.middle-item button').on('click', () => { //hide how-does-it-work part
+      $('.how-does-it-work3 button').on('click', () => { //hide how-does-it-work part
         $('.how-does-it-work').css('display', 'none');
+        $('.how-does-it-work3').css('display', 'none');
         $('.how-does-it-work2').css('display', 'flex');
       })
       for (let i = 0; i < str.length; i++) { //login and register link buttons in price-list part
@@ -28,6 +29,7 @@
         $('#show' + i).on('click', () => { //show how-does-it-work part
           $('.how-does-it-work2').css('display', 'none');
           $('.how-does-it-work').css('display', 'flex');
+          $('.how-does-it-work3').css('display', 'flex');
         })
       }
     }
@@ -53,13 +55,13 @@
     });
     this.get('#/#login', function (context) { //login url functionality
       navigationFunc(context);
+      loading(); 
       let users;
       fetch('https://honeti-backend.herokuapp.com/users')
         .then(response => response.json())
         .then(data => {
           users = data.slice();
           console.log(users);
-          loading(); //when data is loaded, loading screen disappears
         })
       addForm('login'); //function to avoid code repetition - adding login form elements
       $('.login-content').append('<p>Niepoprawne dane logowania</p>'); //rest of adding login-form elements

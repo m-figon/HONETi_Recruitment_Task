@@ -11,7 +11,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    z-index: 5;
+    z-index: 10;
 }
 .cancel-button {
     width: 140%;

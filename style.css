@@ -19,6 +19,11 @@ a {
   background: url("./imgs/Background.png");
   background-size: 100% 100%;
 }
+.work-div{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
 .loading {
   width: 100vw;
   height: 100vh;

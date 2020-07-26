@@ -396,6 +396,42 @@
         margin-top:-2rem;
     }
 }
+.how-does-it-work2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;  
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+    margin-top:-6rem;
+    position: relative;
+    z-index:5;
+}
+.how-does-it-work2 button{
+    background-image: linear-gradient(0deg, #ef7a13 0%, #f3a300 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f5b035;
+    z-index: 3;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.how-does-it-work2 button:hover {
+    cursor: pointer;
+    background: #ef7a13;
+}
+.how-does-it-work2 button img {
+    width: 70%;
+    height: 50%;
+    filter: brightness(0) invert(1);
+}
 @media only screen and (max-width: 750px) {
     .how-does-it-work h2{
         font-size: 1.2rem;

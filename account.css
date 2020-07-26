@@ -83,6 +83,17 @@
     border: 1px solid var(--light-orange);
     cursor: pointer;
 }
+@media only screen and (max-width: 1400px) {
+    .login-form input,
+    .register-form input{
+        margin: 0.6rem 0;
+    }
+    .login-form p,
+    .register-form p{
+        margin: 0;
+    }
+}
+
 @media only screen and (max-width: 650px) {
     .login-form,
     .register-form {
@@ -103,11 +114,6 @@
     .register-content p{
         font-size: 0.8rem;
         width:12rem;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .banner-right img{
-        margin-top: 5rem;
     }
 }
 @media only screen and (max-width: 400px) {

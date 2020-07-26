@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 6;
 }
 .banner-left .content {
     width: 60%;
@@ -24,7 +25,7 @@
 .banner-left h2 {
     margin-bottom: 0;
     font-size: 3rem;
-    line-height: 49px;
+    line-height: 3.06rem;
     color: #ffffff;
     font-weight: 700;
 }
@@ -33,24 +34,24 @@
     display: flex;
 }
 .banner-left p {
-    width: 700px;
-    height: 61px;
+    width: 43.75rem;
+    height: 3.81;
     font-size: 1rem;
-    line-height: 24px;
+    line-height: 1.5rem;
     color: #ffffff;
     font-weight: 400;
 }
 .banner-buttons button {
-    width: 180px;
-    height: 40px;
+    width: 11.25rem;
+    height: 2.5rem;
     border-radius: 5px;
     background-color: #ffffff00;
     border: 1px solid #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
-    line-height: 49px;
+    font-size: 0.94rem;
+    line-height: 3.06rem;
     color: #ffffff;
     font-weight: 600;
     font-family: var(--main-font);
@@ -80,23 +81,23 @@
 }
 .banner-right img {
     margin-top: -3rem;
-    width: 30rem;
+    width: 23rem;
 }
 @media only screen and (max-width: 1500px) {
     .banner-left h2 {
         font-size: 2.2rem;
     }
     .banner-left p {
-        width: 500px;
+        width: 31.25rem;
         font-size: 0.75rem;
-        line-height: 20px;
+        line-height: 1.25rem;
     }
     .banner-buttons{
         margin-top: 0.5rem;
     }
     .banner-buttons button {
-        width: 130px;
-        height: 33px;
+        width: 8.13rem;
+        height: 2.06rem;
     }
     .banner-right img{
         width:25rem;
@@ -108,14 +109,14 @@
     }
     .banner-left p {
         font-size: 0.70rem;
-        line-height: 18px;
+        line-height: 1.13rem;
     }
     .banner-buttons{
         margin-top: 0.1rem;
     }
     .banner-buttons button {
-        width: 110px;
-        height: 25px;
+        width: 6.88rem;
+        height: 1.56rem;
         font-size: 0.8rem;
     }
     .banner-right img{
@@ -139,14 +140,14 @@
     }
     .banner-left p {
         font-size: 0.70rem;
-        line-height: 18px;
+        line-height: 1.13rem;
     }
     .banner-buttons{
         margin-top: 0rem;
     }
     .banner-buttons button {
-        width: 100px;
-        height: 20px;
+        width: 6.25rem;
+        height: 1.25rem;
         font-size: 0.7rem;
     }
     .banner-right img{
@@ -162,21 +163,22 @@
         margin-left: -1.5rem;
     }
     .banner-left p {
-        width: 300px;
+        width: 18.75rem;
         font-size: 0.70rem;
-        line-height: 18px;
+        line-height: 1.13rem;
     }
     .banner-buttons{
         margin-top: 2rem;
         margin-left: -5rem;
     }
     .banner-buttons button {
-        width: 100px;
-        height: 20px;
+        width: 6.25rem;
+        height: 1.25rem;
         font-size: 0.7rem;
     }
     .banner-right img{
         width:14rem;
+        margin-top: 1rem;
     }
     .banner-left .content{
         align-items: center;
@@ -192,9 +194,9 @@
         margin-left: 0.4rem;
     }
     .banner-left p {
-        width: 200px;
+        width: 12.5rem;
         font-size: 0.65rem;
-        line-height: 18px;
+        line-height: 1.13rem;
     }
     .banner-left{
         margin-left: 2rem;
@@ -204,8 +206,8 @@
         width: 35%;
     }
     .banner-right img{
+        width:12rem;
         margin-top: 5rem;
-        width:10rem;
     }
     .banner-buttons{
         margin-top: 4rem;
@@ -213,8 +215,8 @@
         z-index: 5;
     }
     .banner-buttons button {
-        width: 100px;
-        height: 20px;
+        width: 6.25rem;
+        height: 1.25rem;
         font-size: 0.7rem;
     }
 }

@@ -8,9 +8,9 @@
         context.app.setLocation('#/#login');
       })
       $('.nav-bar .right h1:eq(5)').on('click', () => { //signing-out functionality
-        $('.nav-bar .right h1:eq(5)')[0].innerText="";
+        $('.nav-bar .right h1:eq(5)')[0].innerText = "";
         $('.nav-bar .right h1:eq(7)').remove();
-        $('.nav-bar .right h1:eq(4)')[0].innerText="Logowanie";
+        $('.nav-bar .right h1:eq(4)')[0].innerText = "Logowanie";
       })
       $('.nav-bar .right h1:eq(6)').on('click', () => { //changing to register url
         context.app.setLocation('#/#register');
@@ -33,11 +33,15 @@
         })
       }
     }
-    function loading(){ //hiding loading screen, showing app scream
-      window.onload = function() {
-        $('.loading').css("display","none");
-        $('.app').css("display","block");
+    function loading() { //hiding loading screen, showing app screen
+      window.onload = function () {
+        $('.loading').css("display", "none");
+        $('.app').css("display", "block");
       };
+    }
+    function load(){
+      $('.loading').css("display", "flex");
+      $('.app').css("display", "none");
     }
     function addForm(string) { //adding some part of login or register form
       $('.app').append('<div class="' + string + '"></div>');
@@ -54,14 +58,16 @@
       $('.register').remove();
     });
     this.get('#/#login', function (context) { //login url functionality
+      load();
       navigationFunc(context);
-      loading(); 
       let users;
       fetch('https://honeti-backend.herokuapp.com/users')
         .then(response => response.json())
         .then(data => {
           users = data.slice();
           console.log(users);
+          $('.loading').css("display", "none"); //displaying app class instead of loading one when users data is ready
+          $('.app').css("display", "block");
         })
       addForm('login'); //function to avoid code repetition - adding login form elements
       $('.login-content').append('<p>Niepoprawne dane logowania</p>'); //rest of adding login-form elements
@@ -189,7 +195,6 @@
       navigationFunc(context);
       $('.login').remove();
       $('.register').remove();
-      console.log(context.params.default);
       $('html, body').animate({ //navigate to how-does-it-work or price-list section
         scrollTop: $(context.params.default).offset().top
       }, 1000);

@@ -168,7 +168,7 @@
         line-height: 1.13rem;
     }
     .banner-buttons{
-        margin-top: 2rem;
+        margin-top: 0rem;
         margin-left: -5rem;
     }
     .banner-buttons button {
@@ -210,7 +210,7 @@
         margin-top: 5rem;
     }
     .banner-buttons{
-        margin-top: 4rem;
+        margin-top: 0rem;
         margin-left: 1.2rem;
         z-index: 5;
     }

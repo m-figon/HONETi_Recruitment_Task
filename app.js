@@ -96,7 +96,7 @@
         let correctFlag;
         for (let item of users) {
           if (item.account === $('.login-content input:eq(0)')[0].value && item.password === $('.login-content input:eq(1)')[0].value) { //checking if user exists
-            alert('correct login');
+            alert('Pomyślnie zalogowano');
             $('.nav-bar .right').append("<h1>" + $('.login-content input:eq(0)')[0].value + "</h1>")
             $('.nav-bar .right h1:eq(5)')[0].innerText = "Wyloguj";
             $('.nav-bar .right h1:eq(4)')[0].innerText = "";

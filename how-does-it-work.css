@@ -555,18 +555,19 @@
             width: 2rem;
         }
         #arrow1 {
-            margin-left: 5rem;
+            margin-left: 10rem;
             margin-top: 20rem;
         }
         #arrow2 {
             margin-top: 15rem;
-            margin-left: -10rem;
+            margin-left: -13rem;
         }
         #arrow3 {
             width: 2rem;
             height: 2rem;
             margin-top:55rem;
             margin-left: 7rem;
+            transform: rotate(30deg);
         }
         .down-item{
             margin-top:-2rem;

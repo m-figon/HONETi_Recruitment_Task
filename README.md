@@ -6,7 +6,7 @@
 
 -To sign out after login click on text named 'Wyloguj'
 
--Website is size adjustable (works with mobile phones too)
+-Website is size adjustable (works on mobile phones too)
 
 ## back-end source code
 

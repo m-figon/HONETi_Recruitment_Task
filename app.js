@@ -1,18 +1,19 @@
 
 (function ($) {
-
   var app = $.sammy(function () {
+    let login=true;
     function navigationFunc(context) { //adding listener which allow to change state of page
       let str = ['#/#register', '#/#login'];
       $('.nav-bar .right h1:eq(4)').on('click', () => { //changing to login url
-        context.app.setLocation('#/#login');
-      })
-      $('.nav-bar .right h1:eq(5)').on('click', () => { //signing-out functionality
-        $('.nav-bar .right h1:eq(5)')[0].innerText = "";
-        $('.nav-bar .right h1:eq(7)').remove();
+        if(login){
+          context.app.setLocation('#/#login');
+        }else{
+        $('.nav-bar .right h1:eq(6)').remove();
         $('.nav-bar .right h1:eq(4)')[0].innerText = "Logowanie";
+        login=true;
+        }
       })
-      $('.nav-bar .right h1:eq(6)').on('click', () => { //changing to register url
+      $('.nav-bar .right h1:eq(5)').on('click', () => { //changing to register url
         context.app.setLocation('#/#register');
       })
       $('.how-does-it-work3 button').on('click', () => { //hide how-does-it-work part
@@ -104,12 +105,13 @@
           if (item.account === $('.login-content input:eq(0)')[0].value && item.password === $('.login-content input:eq(1)')[0].value) { //checking if user exists
             alert('Pomyślnie zalogowano');
             $('.nav-bar .right').append("<h1>" + $('.login-content input:eq(0)')[0].value + "</h1>")
-            $('.nav-bar .right h1:eq(5)')[0].innerText = "Wyloguj";
-            $('.nav-bar .right h1:eq(4)')[0].innerText = "";
+            $('.nav-bar .right h1:eq(4)')[0].innerText = "Wyloguj";
             $('.login-content input:eq(0)')[0].value = "Wpisz nazwe konta...";
             $('.login-content input:eq(1)')[0].value = "Podaj hasło...";
             $('.login-content input:eq(1)')[0].type = "text";
             $('.login-content p:eq(0)').css("display", "none");
+            login=false;
+            $('.nav-bar .right h1:eq(4)').off('click');
             correctFlag = true;
           }
           if (!correctFlag) { //if data is not correct p tag is displayed
